@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Recipes</title>
+   <link rel="stylesheet" type="text/css" href="allstyle.css">
+	
+
+
+</head>
+<body>
+
+<div class="header1">
+<img src="logo.jpeg" height="240">
+</div>
+
+<div class="navbar">
+  <a href="index.html">home</a>
+  <a href="about.html">about me</a>
+  <a href="allrec.html">all recipes</a>
+</div>
+
+  <div class="wrapper">
+	  <div class="main">
+        <h1>All Recipes</h1>
+    
+        <h2>Explore my kitchen...</h2>
+  	  </div>
+  	   
+    	<div class="container"> 
+      <div class="shuffle-group">
+          <div data-si-mousemove-trigger="100" class="shuffle-me">
+             <a href="flat.html" class="info" target="_blank">
+              <h1>Falafel Flatbread</h1>
+              <h2>January 4, 2019</h2>
+            </a>
+
+            <div class="images">
+              <img src="spic/sf1.jpg">
+              <img src="spic/sf2.jpg">
+              <img src="spic/sf5.jpg">
+            </div>
+
+          </div>
+          <div class="shuffle-me">
+            <a href="egg.html" class="info" target="_blank">
+              <h1>Healthy Egg Salad Sandwich</h1>
+              <h2>May 2, 2018</h2>
+            </a>
+            <div class="images"> 
+              <img src="spic/seggsam.jpg">
+              <img src="spic/se1.jpg">
+              <img src="spic/se2.jpg">
+            </div>
+          </div>
+
+           <div class="shuffle-group">
+            <div data-si-mousemove-trigger="100" class="shuffle-me">
+            <a href="sweet.html" class="info" target="_blank">
+              <h1>Baked Sweet Potato Fries</h1>
+              <h2>April 21, 2019</h2>
+            </a>
+            <div class="images">
+              <img src="pic/s1.jpg">
+              <img src="pic/s2.jpg">
+              <img src="pic/s4.jpg">
+            </div>
+          </div>
+
+        <div class="shuffle-me">
+    	      <a href="avo.html" class="info" target="_blank"><h1>Avocado & Egg Brown Rice Bowl</h1><h2>January 18, 2018</h2></a>
+    	      <div class="images">
+  	          <img src="spic/seggbowl.jpg">
+  	          <img src="spic/scrack.jpg">
+  	          <img src="spic/stop.jpg">
+  	        </div>
+  	      </div>
+    </div>
+  </div>
+  
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.shuffle-images.js"> </script>
+  
+  <script>
+    $(document).ready(function(){
+       $(".shuffle-me").shuffleImages({
+         target: ".images > img"
+       });
+    });
+    
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139308946-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139308946-1');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+h1 {
+  color: #5882FA;
+  font-family: 'Courier', monospace;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 4px #E0ECF8;
+}
+
+h2{
+  color: #8B0053;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+a{
+   color: grey;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+}
+
+h3{
+  color: grey;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+p{
+  color: grey;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 13px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul{
+  list-style: none;
+  color: grey;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+.row p{
+  color: grey;
+  font-family: 'Courier', monospace;
+  font-weight: lighter;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+}
+
+body {
+  background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div.header{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-decoration-color: white;
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  color: white;
+}
+
+div.gallery{
+  border: none;
+}
+
+div.gallery:hover{
+  border: 1px solid lightgrey;
+  background-color: grey;
+}
+
+div.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 12px;
+  text-align: center;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+  border: none;
+  font-family: 'Rokkitt', serif;
+  color: white;
+  margin: 20px 200px;
+  justify-content: center;
+  display: flex;
+  padding: 14px 50px;
+  cursor: pointer;
+}
+
+
+
+.rec1 { 
+  background-color: #8B0053;
+  align-content: center;
+  text-align: center;
+}
+
+.rec1:hover {
+  background-color: grey;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+}
+
+
+.navbar a {
+  float: center;
+  display: inline-block;
+  color: grey;
+  font-family: 'Glegoo', serif;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: black;
+}
+/* start column stuff*/
+.column {
+  float: left;
+  background-color: white;
+}
+
+.left {
+  width: 75%;
+  background-color: white;
+}
+
+.right {
+  width: 25%;
+}
+ 
+ @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+/* end column stuff*/
+
+/* START GALLERY STUFF*/
+/*The grid: Four equal columns that floats next to each other */
+.column {
+  align-content: center;
+  padding-left: 200px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
